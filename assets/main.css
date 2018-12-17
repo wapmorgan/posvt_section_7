@@ -1,0 +1,170 @@
+body {
+    text-align: center;
+    padding: 20px;
+
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+    max-width: 100%;
+    text-align: left;
+}
+
+article {
+    float: left;
+}
+
+article.post {
+    float: left;
+    width: 400px;
+}
+
+article.column {
+    float: left;
+    width: 300px;
+}
+
+img.bigben {
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+article.post, article.post div, article.column, article.column div, .days-list div {
+    display: inline-block;
+}
+
+.newline {
+    clear: both;
+}
+
+/* левый контейнер */
+.posts-list {
+    margin-bottom: 30px;
+}
+
+.days-list {
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* блок для статьи */
+.post {
+    /*max-width: 30%;*/
+    margin-bottom: 35px;
+}
+
+.post-content p {
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+.post-title {
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+/* блок с кнопкой "продолжить чтение" и кнопками социальных сетей */
+.post-footer {
+    border-top: 1px solid #EBEBE3;
+    border-bottom: 1px solid #EBEBE3;
+    position: relative;
+    margin-top: 15px;
+}
+
+.more-link {
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 44px;
+    padding: 0 22px;
+    background: #3C3D41;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
+.more-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    border: solid transparent;
+    border-width: 22px 18px;
+    border-left-color: #3C3D41;
+    transform: translateX(100%);
+}
+
+.post-social {
+    position: absolute;
+    left: auto;
+    top: 50%;
+    right: 0;
+    text-align: right;
+    transform: translateY(-50%);
+    padding: 0;
+    font-size: 12px;
+}
+
+.post-social a {
+    display: inline-block;
+    margin-left: 8px;
+    color: #F8B763;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+/*@media (max-width:1200px) {
+    article.post {
+    }
+
+    .widget-post-title {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width:480px) {
+    article.post {
+    }
+
+    /* отменяем позиционирование кнопок соцсетей */
+    .post-social {
+        position: static;
+        text-align: center;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .widget-post-title {
+        font-size: 1.2em;
+    }
+
+    /* отменяем обтекание для столбцов подвала страницы */
+    .footer-col {
+        float: none;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-col:last-child {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+}
+*/
